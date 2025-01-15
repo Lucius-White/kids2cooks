@@ -1,6 +1,7 @@
 export const config = {
   dir: {
     input: "src",
+    output: "site",
     includes: "_includes",
     layouts: "_layouts",
   },
