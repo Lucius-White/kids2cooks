@@ -1,0 +1,57 @@
+---
+layout: default.njk
+title: "{ { title } }"
+---
+
+<!-- Recipe Section -->
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center text-white">
+      <h1 class="display-4 fw-bolder">{{ title | capitalize }}</h1>
+    </div>
+  </div>
+</header>
+<section class="container pt-5">
+  <div class="row">
+    <!-- Recipe Image -->
+
+    <div class="col-md-4">
+      <img
+        src="/assets/images/{{ image }}"
+        alt="{{ title }}"
+        class="img-fluid rounded"
+      />
+    </div>
+
+    <!-- Recipe Name and Description -->
+
+    <div class="col-md-8">
+      <p class="lead">
+        {{ description }}
+      </p>
+    </div>
+  </div>
+
+  <!-- Ingredients and Instructions -->
+
+  <div class="row mt-4">
+    <!-- Ingredients -->
+
+    <div class="col-md-4">
+      <h3>Ingredients</h3>
+      <ul class="list-group">
+        {% for ingredient in ingredients %}
+        <li class="list-group-item">{{ ingredient }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- Instructions -->
+
+    <div class="col-md-8">
+      <h3>Instructions</h3>
+      {% for instruction in instructions %}
+      <p>{{ instruction }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>

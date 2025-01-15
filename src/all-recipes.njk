@@ -1,0 +1,9 @@
+---
+layout: default.njk
+permalink: "/recipes/"
+title: "All Recipes"
+---
+
+{% set mealName = "all" %} {%set recipes = collections.recipes %}{%set tags =
+collections.allTags %} {%set restrictions = collections.allRestrictions %}{%
+include "recipe-list.njk" %}

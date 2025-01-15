@@ -1,0 +1,17 @@
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+$theme-colors: (
+  "primary": #a47551,
+  "secondary": #d0b49f,
+  "success": #198754,
+  "info": #0dcaf0,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #e4d4c8,
+  "dark": #523a28,
+);
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// Your custom styles
+body {
+  font-family: "Lora", serif;
+}

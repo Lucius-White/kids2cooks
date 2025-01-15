@@ -1,0 +1,22 @@
+{
+  "name": "kids2cooks11ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build:css": "sass src/scss/styles.scss:src/css/styles.css --style=compressed",
+    "build": "npm run build:css && eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.83.1"
+  }
+}
