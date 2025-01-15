@@ -125,15 +125,12 @@
       );
       const difficultyButtons = document.querySelectorAll(".difficulty-button");
       function filterRecipes() {
-        console.log("filterRecipes");
         const selectedTags = Array.from(tagButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.tag);
-        console.log("selectedTags", selectedTags);
         const selectedRestrictions = Array.from(restrictionButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.restriction);
-        console.log("selectedRestrictions", selectedRestrictions);
         const selectedDifficulties = Array.from(difficultyButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.difficulty);
@@ -143,14 +140,14 @@
             " "
           );
           const recipeTags = (recipe.dataset.tags ?? "").split(" ");
-          console.log(recipeRestrictions);
           if (
-            (selectedTags.every((tag) => recipeTags.includes(tag)) &&
-              selectedRestrictions.every((restriction) =>
+            selectedTags.every((tag) => recipeTags.includes(tag))
+            && selectedRestrictions.every((restriction) =>
                 recipeRestrictions.includes(restriction)
-              ) &&
-              !selectedDifficulties.length) ||
-            selectedDifficulties.includes(recipeDifficulty)
+              ) 
+            && (
+              !selectedDifficulties.length ||
+            selectedDifficulties.includes(recipeDifficulty))
           ) {
             recipe.classList.remove("d-none");
           } else {
@@ -168,7 +165,6 @@
       });
       tagButtons.forEach((button) => {
         button.addEventListener("click", () => {
-          console.log("clicked a tag");
           const tag = button.dataset.tag;
 
           // Toggle the active class on the button

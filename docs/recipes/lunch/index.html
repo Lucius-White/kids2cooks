@@ -116,6 +116,22 @@
       <button
         type="button"
         class="btn btn-outline-primary filter-button"
+        data-tag="cheesy"
+      >
+        cheesy
+      </button>
+      
+      <button
+        type="button"
+        class="btn btn-outline-primary filter-button"
+        data-tag="easy"
+      >
+        easy
+      </button>
+      
+      <button
+        type="button"
+        class="btn btn-outline-primary filter-button"
         data-tag="quick"
       >
         quick
@@ -132,14 +148,6 @@
       <button
         type="button"
         class="btn btn-outline-primary filter-button"
-        data-tag="protein"
-      >
-        protein
-      </button>
-      
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
         data-tag="healthy"
       >
         healthy
@@ -148,17 +156,9 @@
       <button
         type="button"
         class="btn btn-outline-primary filter-button"
-        data-tag="easy"
+        data-tag="protein"
       >
-        easy
-      </button>
-      
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="cheesy"
-      >
-        cheesy
+        protein
       </button>
       
     </div>
@@ -190,6 +190,57 @@
     </div>
   </div>
   <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+    
+    <div
+      class="col mb-5 recipe"
+      data-tags="cheesy easy"
+      data-restrictions=""
+      data-difficulty="easy"
+    >
+      <div class="card h-100 position-relative">
+        <!-- Badge-->
+        <div
+          class="badge bg-dark text-white position-absolute"
+          style="top: 0.5rem; right: 0.5rem"
+        >
+          Cheesy
+        </div>
+        <!-- Image-->
+        <img
+          class="card-img-top"
+          src="/assets/images/chicken-quesadilla.jpg"
+          alt="Chicken Quesadilla"
+        />
+        <!-- Details-->
+        <div class="card-body p-4">
+          <div class="text-center">
+            <!-- Title-->
+            <h5 class="fw-bolder">Chicken Quesadilla</h5>
+            <!-- Difficulty-->
+            <div class="d-flex justify-content-center small mb-2">
+              <div class="bi-mortarboard-fill"></div>
+              
+              <div class="bi-mortarboard"></div>
+                 
+              <div class="bi-mortarboard"></div>
+              
+            </div>
+            <!-- Difficulty-->
+            Difficulty: Easy
+          </div>
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center">
+            <a
+              class="stretched-link btn btn-outline-dark mt-auto"
+              href="/recipes/lunch/chicken-quesadilla/"
+              >See Recipe</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     
     <div
       class="col mb-5 recipe"
@@ -235,6 +286,57 @@
             <a
               class="stretched-link btn btn-outline-dark mt-auto"
               href="/recipes/lunch/grilled-cheese/"
+              >See Recipe</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="col mb-5 recipe"
+      data-tags="healthy easy"
+      data-restrictions="vegetarian"
+      data-difficulty="hard"
+    >
+      <div class="card h-100 position-relative">
+        <!-- Badge-->
+        <div
+          class="badge bg-dark text-white position-absolute"
+          style="top: 0.5rem; right: 0.5rem"
+        >
+          Refreshing
+        </div>
+        <!-- Image-->
+        <img
+          class="card-img-top"
+          src="/assets/images/pasta-salad.jpg"
+          alt="Pasta Salad"
+        />
+        <!-- Details-->
+        <div class="card-body p-4">
+          <div class="text-center">
+            <!-- Title-->
+            <h5 class="fw-bolder">Pasta Salad</h5>
+            <!-- Difficulty-->
+            <div class="d-flex justify-content-center small mb-2">
+              <div class="bi-mortarboard-fill"></div>
+               
+              <div class="bi-mortarboard-fill"></div>
+               
+              <div class="bi-mortarboard-fill"></div>
+               
+            </div>
+            <!-- Difficulty-->
+            Difficulty: Hard
+          </div>
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center">
+            <a
+              class="stretched-link btn btn-outline-dark mt-auto"
+              href="/recipes/lunch/pasta-salad/"
               >See Recipe</a
             >
           </div>
@@ -344,108 +446,6 @@
       </div>
     </div>
     
-    <div
-      class="col mb-5 recipe"
-      data-tags="healthy easy"
-      data-restrictions="vegetarian"
-      data-difficulty="hard"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          Refreshing
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/pasta-salad.jpg"
-          alt="Pasta Salad"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">Pasta Salad</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-               
-              <div class="bi-mortarboard-fill"></div>
-               
-              <div class="bi-mortarboard-fill"></div>
-               
-            </div>
-            <!-- Difficulty-->
-            Difficulty: Hard
-          </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="/recipes/lunch/pasta-salad/"
-              >See Recipe</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div
-      class="col mb-5 recipe"
-      data-tags="cheesy easy"
-      data-restrictions=""
-      data-difficulty="easy"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          Cheesy
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/chicken-quesadilla.jpg"
-          alt="Chicken Quesadilla"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">Chicken Quesadilla</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-              
-              <div class="bi-mortarboard"></div>
-                 
-              <div class="bi-mortarboard"></div>
-              
-            </div>
-            <!-- Difficulty-->
-            Difficulty: Easy
-          </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="/recipes/lunch/chicken-quesadilla/"
-              >See Recipe</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -456,15 +456,12 @@
       );
       const difficultyButtons = document.querySelectorAll(".difficulty-button");
       function filterRecipes() {
-        console.log("filterRecipes");
         const selectedTags = Array.from(tagButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.tag);
-        console.log("selectedTags", selectedTags);
         const selectedRestrictions = Array.from(restrictionButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.restriction);
-        console.log("selectedRestrictions", selectedRestrictions);
         const selectedDifficulties = Array.from(difficultyButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.difficulty);
@@ -474,14 +471,14 @@
             " "
           );
           const recipeTags = (recipe.dataset.tags ?? "").split(" ");
-          console.log(recipeRestrictions);
           if (
-            (selectedTags.every((tag) => recipeTags.includes(tag)) &&
-              selectedRestrictions.every((restriction) =>
+            selectedTags.every((tag) => recipeTags.includes(tag))
+            && selectedRestrictions.every((restriction) =>
                 recipeRestrictions.includes(restriction)
-              ) &&
-              !selectedDifficulties.length) ||
-            selectedDifficulties.includes(recipeDifficulty)
+              ) 
+            && (
+              !selectedDifficulties.length ||
+            selectedDifficulties.includes(recipeDifficulty))
           ) {
             recipe.classList.remove("d-none");
           } else {
@@ -499,7 +496,6 @@
       });
       tagButtons.forEach((button) => {
         button.addEventListener("click", () => {
-          console.log("clicked a tag");
           const tag = button.dataset.tag;
 
           // Toggle the active class on the button
