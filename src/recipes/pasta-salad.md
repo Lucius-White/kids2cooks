@@ -8,7 +8,6 @@ restrictions:
   - vegetarian
 tags:
   - healthy
-  - easy
 difficulty: hard
 ingredients:
   - 2 cups cooked pasta (penne or rotini)
