@@ -7,7 +7,6 @@ badge: Cheesy
 restrictions: []
 tags:
   - cheesy
-  - easy
 difficulty: easy
 ingredients:
   - 1 large tortilla
