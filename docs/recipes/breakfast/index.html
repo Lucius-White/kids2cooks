@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="Lucius White" />
     <meta name="generator" content="Eleventy v3.0.0" />
-    <title>{{ mealGroup.meal | capitalize }} Recipes</title>
+    <title>Breakfast Recipes</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/recipes/breakfast">Breakfast</a>
@@ -64,12 +64,12 @@
 
     <!-- Section-->
     <div class="pb-5">
-      
-   <!-- Header-->
+         <!-- Header-->
 <header class="bg-dark py-5">
   <div class="container px-4 px-lg-5 my-5">
     <div class="text-center text-white">
-      <h1 class="display-4 fw-bolder">Breakfast Recipes</h1>
+      <h1 class="display-4 fw-bolder">Breakfast
+        Recipes</h1>
     </div>
   </div>
 </header>
@@ -77,35 +77,19 @@
   <p>Use the filters below to narrow down the list of recipes</p>
   <div class="my-3">
     <strong>Difficulty:</strong>
-    <div
-      class="btn-group"
-      role="group"
-      aria-label="Dietary Restriction Filters"
-    >
+    <div class="btn-group" role="group" aria-label="Dietary Restriction Filters">
       
-      <button
-        type="button"
-        class="btn btn-outline-primary difficulty-button"
-        data-difficulty="easy"
-      >
-        Easy
-      </button>
+        <button type="button" class="btn btn-outline-primary difficulty-button" data-difficulty="easy">
+          Easy
+        </button>
       
-      <button
-        type="button"
-        class="btn btn-outline-primary difficulty-button"
-        data-difficulty="intermediate"
-      >
-        Intermediate
-      </button>
+        <button type="button" class="btn btn-outline-primary difficulty-button" data-difficulty="intermediate">
+          Intermediate
+        </button>
       
-      <button
-        type="button"
-        class="btn btn-outline-primary difficulty-button"
-        data-difficulty="hard"
-      >
-        Hard
-      </button>
+        <button type="button" class="btn btn-outline-primary difficulty-button" data-difficulty="hard">
+          Hard
+        </button>
       
     </div>
   </div>
@@ -113,435 +97,314 @@
     <strong>Features:</strong>
     <div class="btn-group" role="group" aria-label="Tag Filters">
       
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="quick"
-      >
-        quick
-      </button>
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="sweet">
+          Sweet
+        </button>
       
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="healthy"
-      >
-        healthy
-      </button>
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="beginner">
+          Beginner
+        </button>
       
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="sweet"
-      >
-        sweet
-      </button>
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="healthy">
+          Healthy
+        </button>
       
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="beginner"
-      >
-        beginner
-      </button>
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="delicious">
+          Delicious
+        </button>
       
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="delicious"
-      >
-        delicious
-      </button>
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="protein">
+          Protein
+        </button>
       
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="protein"
-      >
-        protein
-      </button>
-      
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="easy"
-      >
-        easy
-      </button>
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="quick">
+          Quick
+        </button>
       
     </div>
   </div>
   <div class="my-3">
     <strong>Dietary Restrictions:</strong>
-    <div
-      class="btn-group"
-      role="group"
-      aria-label="Dietary Restriction Filters"
-    >
+    <div class="btn-group" role="group" aria-label="Dietary Restriction Filters">
       
-      <button
-        type="button"
-        class="btn btn-outline-primary restriction-button"
-        data-restriction="vegetarian"
-      >
-        vegetarian
-      </button>
+        <button type="button" class="btn btn-outline-primary restriction-button" data-restriction="vegetarian">
+          Vegetarian
+        </button>
       
-      <button
-        type="button"
-        class="btn btn-outline-primary restriction-button"
-        data-restriction="vegan"
-      >
-        vegan
-      </button>
+        <button type="button" class="btn btn-outline-primary restriction-button" data-restriction="vegan">
+          Vegan
+        </button>
       
     </div>
   </div>
   <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
     
-    <div
-      class="col mb-5 recipe"
-      data-tags="quick healthy"
-      data-restrictions="vegetarian vegan"
-      data-difficulty="easy"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          Trendy
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/avocado-toast.jpg"
-          alt="Avocado Toast"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">Avocado Toast</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-              
-              <div class="bi-mortarboard"></div>
-                 
-              <div class="bi-mortarboard"></div>
-              
-            </div>
-            <!-- Difficulty-->
-            Difficulty: Easy
+      <div class="col mb-5 recipe" data-tags="sweet beginner" data-restrictions="vegetarian" data-difficulty="easy">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            Sweet
           </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="/recipes/breakfast/avocado-toast/"
-              >See Recipe</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div
-      class="col mb-5 recipe"
-      data-tags="sweet beginner"
-      data-restrictions="vegetarian"
-      data-difficulty="easy"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          Sweet
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/french-toast.jpg"
-          alt="French Toast"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">French Toast</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-              
-              <div class="bi-mortarboard"></div>
-                 
-              <div class="bi-mortarboard"></div>
-              
-            </div>
-            <!-- Difficulty-->
-            Difficulty: Easy
-          </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="/recipes/breakfast/french-toast/"
-              >See Recipe</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div
-      class="col mb-5 recipe"
-      data-tags="healthy sweet"
-      data-restrictions="vegetarian"
-      data-difficulty="easy"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          Healthy
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/fruit-parfait.jpg"
-          alt="Fruit Parfait"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">Fruit Parfait</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-              
-              <div class="bi-mortarboard"></div>
-                 
-              <div class="bi-mortarboard"></div>
-              
-            </div>
-            <!-- Difficulty-->
-            Difficulty: Easy
-          </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="/recipes/breakfast/fruit-parfait/"
-              >See Recipe</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div
-      class="col mb-5 recipe"
-      data-tags="healthy delicious"
-      data-restrictions="vegetarian"
-      data-difficulty="hard"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          Delicious
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/pancakes.jpg"
-          alt="Fluffy Pancakes"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">Fluffy Pancakes</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-               
-              <div class="bi-mortarboard-fill"></div>
-               
-              <div class="bi-mortarboard-fill"></div>
-               
-            </div>
-            <!-- Difficulty-->
-            Difficulty: Hard
-          </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="/recipes/breakfast/pancakes/"
-              >See Recipe</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div
-      class="col mb-5 recipe"
-      data-tags="protein easy"
-      data-restrictions="vegetarian"
-      data-difficulty="easy"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          Quick
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/scrambled-eggs.jpg"
-          alt="Scrambled Eggs"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">Scrambled Eggs</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-              
-              <div class="bi-mortarboard"></div>
-                 
-              <div class="bi-mortarboard"></div>
-              
-            </div>
-            <!-- Difficulty-->
-            Difficulty: Easy
-          </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="/recipes/breakfast/scrambled-eggs/"
-              >See Recipe</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div
-      class="col mb-5 recipe"
-      data-tags="healthy sweet"
-      data-restrictions="vegetarian vegan"
-      data-difficulty="intermediate"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          Healthy
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/smoothie-bowl.jpg"
-          alt="Smoothie Bowl"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">Smoothie Bowl</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-               
-              <div class="bi-mortarboard-fill"></div>
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/french-toast.jpg" alt="French Toast"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">French Toast</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
                 
-              <div class="bi-mortarboard"></div>
-              
+                  <div class="bi-mortarboard"></div>
+                
+                
+                
+                
+                  <div class="bi-mortarboard"></div>
+                
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              Easy
             </div>
-            <!-- Difficulty-->
-            Difficulty: Intermediate
           </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="/recipes/breakfast/smoothie-bowl/"
-              >See Recipe</a
-            >
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/french-toast/">See Recipe</a >
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    
+      <div class="col mb-5 recipe" data-tags="healthy sweet" data-restrictions="vegetarian" data-difficulty="easy">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            Healthy
+          </div>
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/fruit-parfait.jpg" alt="Fruit Parfait"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">Fruit Parfait</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
+                
+                  <div class="bi-mortarboard"></div>
+                
+                
+                
+                
+                  <div class="bi-mortarboard"></div>
+                
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              Easy
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/fruit-parfait/">See Recipe</a >
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col mb-5 recipe" data-tags="healthy delicious" data-restrictions="vegetarian" data-difficulty="hard">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            Delicious
+          </div>
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/pancakes.jpg" alt="Fluffy Pancakes"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">Fluffy Pancakes</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
+                
+                
+                  <div class="bi-mortarboard-fill"></div>
+                
+                
+                  <div class="bi-mortarboard-fill"></div>
+                
+                
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              Hard
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/pancakes/">See Recipe</a >
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col mb-5 recipe" data-tags="protein" data-restrictions="vegetarian" data-difficulty="easy">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            Quick
+          </div>
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/scrambled-eggs.jpg" alt="Scrambled Eggs"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">Scrambled Eggs</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
+                
+                  <div class="bi-mortarboard"></div>
+                
+                
+                
+                
+                  <div class="bi-mortarboard"></div>
+                
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              Easy
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/scrambled-eggs/">See Recipe</a >
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col mb-5 recipe" data-tags="healthy sweet" data-restrictions="vegetarian vegan" data-difficulty="intermediate">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            Healthy
+          </div>
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/smoothie-bowl.jpg" alt="Smoothie Bowl"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">Smoothie Bowl</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
+                
+                
+                  <div class="bi-mortarboard-fill"></div>
+                
+                
+                
+                  <div class="bi-mortarboard"></div>
+                
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              Intermediate
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/smoothie-bowl/">See Recipe</a >
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col mb-5 recipe" data-tags="quick healthy" data-restrictions="vegetarian vegan" data-difficulty="easy">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            Trendy
+          </div>
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/avocado-toast.jpg" alt="Avocado Toast"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">Avocado Toast</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
+                
+                  <div class="bi-mortarboard"></div>
+                
+                
+                
+                
+                  <div class="bi-mortarboard"></div>
+                
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              Easy
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/avocado-toast/">See Recipe</a >
+            </div>
+          </div>
+        </div>
+      </div>
     
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const recipes = document.querySelectorAll(".recipe");
       const tagButtons = document.querySelectorAll(".filter-button");
-      const restrictionButtons = document.querySelectorAll(
-        ".restriction-button"
-      );
+      const restrictionButtons = document.querySelectorAll(".restriction-button");
       const difficultyButtons = document.querySelectorAll(".difficulty-button");
       function filterRecipes() {
-        const selectedTags = Array.from(tagButtons)
+        const selectedTags = Array
+          .from(tagButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.tag);
-        const selectedRestrictions = Array.from(restrictionButtons)
+        const selectedRestrictions = Array
+          .from(restrictionButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.restriction);
-        const selectedDifficulties = Array.from(difficultyButtons)
+        const selectedDifficulties = Array
+          .from(difficultyButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.difficulty);
         recipes.forEach((recipe) => {
           const recipeDifficulty = recipe.dataset.difficulty;
-          const recipeRestrictions = (recipe.dataset.restrictions ?? "").split(
-            " "
-          );
+          const recipeRestrictions = (recipe.dataset.restrictions ?? "").split(" ");
           const recipeTags = (recipe.dataset.tags ?? "").split(" ");
-          if (
-            selectedTags.every((tag) => recipeTags.includes(tag))
-            && selectedRestrictions.every((restriction) =>
-                recipeRestrictions.includes(restriction)
-              ) 
-            && (
-              !selectedDifficulties.length ||
-            selectedDifficulties.includes(recipeDifficulty))
-          ) {
-            recipe.classList.remove("d-none");
+          if (selectedTags.every((tag) => recipeTags.includes(tag)) && selectedRestrictions.every((restriction) => recipeRestrictions.includes(restriction)) && (!selectedDifficulties.length || selectedDifficulties.includes(recipeDifficulty))) {
+            recipe
+              .classList
+              .remove("d-none");
           } else {
-            recipe.classList.add("d-none");
+            recipe
+              .classList
+              .add("d-none");
           }
         });
       }
@@ -549,7 +412,9 @@
       difficultyButtons.forEach((button) => {
         button.addEventListener("click", () => {
           // Toggle the active class on the button
-          button.classList.toggle("active");
+          button
+            .classList
+            .toggle("active");
           filterRecipes();
         });
       });
@@ -558,7 +423,9 @@
           const tag = button.dataset.tag;
 
           // Toggle the active class on the button
-          button.classList.toggle("active");
+          button
+            .classList
+            .toggle("active");
 
           filterRecipes();
         });
@@ -568,14 +435,15 @@
           const restriction = button.dataset.restriction;
 
           // Toggle the active class on the button
-          button.classList.toggle("active");
+          button
+            .classList
+            .toggle("active");
           filterRecipes();
         });
       });
     });
   </script>
 </section>
-
 
     </div>
     <!-- Footer-->

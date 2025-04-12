@@ -7,7 +7,7 @@ badge: Cheesy
 restrictions: []
 tags:
   - cheesy
-difficulty: easy
+difficulty: intermediete
 ingredients:
   - 1 large tortilla
   - 1/2 cup cooked shredded chicken

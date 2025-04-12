@@ -5,9 +5,9 @@ pagination:
   size: 1
   alias: mealGroup
 permalink: "/recipes/{{ mealGroup.meal }}/"
-title: "{{ mealGroup.meal | capitalize }} Recipes"
+eleventyComputed:
+  title: "{{ mealGroup.meal | capitalize }} Recipes"
 ---
-
 {% set mealName = mealGroup.meal %} {% set recipes = mealGroup.recipes %} {%set
 tags = mealGroup.tags %}{%set restrictions = mealGroup.restrictions %} {%
 include "recipe-list.njk" %}
