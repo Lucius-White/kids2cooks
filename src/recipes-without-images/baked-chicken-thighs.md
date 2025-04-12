@@ -7,7 +7,6 @@ badge: Juicy
 restrictions: []
 tags:
   - protein
-  - beginner
 difficulty: hard
 ingredients:
   - 4 bone-in, skin-on chicken thighs

@@ -7,7 +7,6 @@ badge: Italian
 restrictions: []
 tags:
   - hearty
-  - beginner
 difficulty: hard
 ingredients:
   - 1 pound ground beef

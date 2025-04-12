@@ -8,7 +8,6 @@ restrictions:
   - vegetarian
 tags:
   - cheesy
-  - beginner
 difficulty: intermediate
 ingredients:
   - 4 cups fresh broccoli florets

@@ -8,7 +8,6 @@ restrictions:
   - vegetarian
 tags:
   - sweet
-  - beginner
 difficulty: easy
 ingredients:
   - 2 slices of bread
