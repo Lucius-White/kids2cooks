@@ -8,7 +8,6 @@ restrictions:
   - vegetarian
 tags:
   - protein
-  - easy
 difficulty: easy
 ingredients:
   - 3 large eggs
