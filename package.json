@@ -13,10 +13,10 @@
   "type": "module",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "sass": "^1.83.1"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "sass": "^1.83.1"
+    "bootstrap": "^5.3.3"
   }
 }

@@ -2,7 +2,8 @@
 <header class="bg-dark py-5">
   <div class="container px-4 px-lg-5 my-5">
     <div class="text-center text-white">
-      <h1 class="display-4 fw-bolder">{{ mealName | capitalize }} Recipes</h1>
+      <h1 class="display-4 fw-bolder">{{ mealName | capitalize }}
+        Recipes</h1>
     </div>
   </div>
 </header>
@@ -10,19 +11,11 @@
   <p>Use the filters below to narrow down the list of recipes</p>
   <div class="my-3">
     <strong>Difficulty:</strong>
-    <div
-      class="btn-group"
-      role="group"
-      aria-label="Dietary Restriction Filters"
-    >
-      {% for difficulty in ["easy", "intermediate", "hard"] %}
-      <button
-        type="button"
-        class="btn btn-outline-primary difficulty-button"
-        data-difficulty="{{ difficulty }}"
-      >
-        {{ difficulty | capitalize }}
-      </button>
+    <div class="btn-group" role="group" aria-label="Dietary Restriction Filters">
+      {% for difficulty in["easy", "intermediate", "hard"] %}
+        <button type="button" class="btn btn-outline-primary difficulty-button" data-difficulty="{{ difficulty }}">
+          {{ difficulty | capitalize }}
+        </button>
       {% endfor %}
     </div>
   </div>
@@ -30,128 +23,99 @@
     <strong>Features:</strong>
     <div class="btn-group" role="group" aria-label="Tag Filters">
       {% for tag in tags %}
-      <button
-        type="button"
-        class="btn btn-outline-primary filter-button"
-        data-tag="{{ tag }}"
-      >
-        {{ tag }}
-      </button>
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="{{ tag }}">
+          {{ tag | capitalize}}
+        </button>
       {% endfor %}
     </div>
   </div>
   <div class="my-3">
     <strong>Dietary Restrictions:</strong>
-    <div
-      class="btn-group"
-      role="group"
-      aria-label="Dietary Restriction Filters"
-    >
+    <div class="btn-group" role="group" aria-label="Dietary Restriction Filters">
       {% for restriction in restrictions %}
-      <button
-        type="button"
-        class="btn btn-outline-primary restriction-button"
-        data-restriction="{{ restriction }}"
-      >
-        {{ restriction }}
-      </button>
+        <button type="button" class="btn btn-outline-primary restriction-button" data-restriction="{{ restriction }}">
+          {{ restriction | capitalize }}
+        </button>
       {% endfor %}
     </div>
   </div>
   <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
     {% for recipe in recipes %}
-    <div
-      class="col mb-5 recipe"
-      data-tags="{{ recipe.data.tags | join(' ') }}"
-      data-restrictions="{{ recipe.data.restrictions | default([]) | join(' ') }}"
-      data-difficulty="{{ recipe.data.difficulty }}"
-    >
-      <div class="card h-100 position-relative">
-        <!-- Badge-->
-        <div
-          class="badge bg-dark text-white position-absolute"
-          style="top: 0.5rem; right: 0.5rem"
-        >
-          {{ recipe.data.badge | default("Delicious") }}
-        </div>
-        <!-- Image-->
-        <img
-          class="card-img-top"
-          src="/assets/images/{{ recipe.data.image }}"
-          alt="{{ recipe.data.title }}"
-        />
-        <!-- Details-->
-        <div class="card-body p-4">
-          <div class="text-center">
-            <!-- Title-->
-            <h5 class="fw-bolder">{{ recipe.data.title }}</h5>
-            <!-- Difficulty-->
-            <div class="d-flex justify-content-center small mb-2">
-              <div class="bi-mortarboard-fill"></div>
-              {% if recipe.data.difficulty === "easy" %}
-              <div class="bi-mortarboard"></div>
-              {% endif %} {% if recipe.data.difficulty !== "easy" %}
-              <div class="bi-mortarboard-fill"></div>
-              {% endif %} {% if recipe.data.difficulty === "hard" %}
-              <div class="bi-mortarboard-fill"></div>
-              {% endif %} {% if recipe.data.difficulty !== "hard" %}
-              <div class="bi-mortarboard"></div>
-              {% endif %}
-            </div>
-            <!-- Difficulty-->
-            Difficulty: {{ recipe.data.difficulty | capitalize }}
+      <div class="col mb-5 recipe" data-tags="{{ recipe.data.tags | join(' ') }}" data-restrictions="{{ recipe.data.restrictions | default([]) | join(' ') }}" data-difficulty="{{ recipe.data.difficulty }}">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            {{ recipe.data.badge | default("Delicious") }}
           </div>
-        </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center">
-            <a
-              class="stretched-link btn btn-outline-dark mt-auto"
-              href="{{ recipe.url }}"
-              >See Recipe</a
-            >
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/{{ recipe.data.image }}" alt="{{ recipe.data.title }}"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">{{ recipe.data.title }}</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
+                {% if recipe.data.difficulty === "easy" %}
+                  <div class="bi-mortarboard"></div>
+                {% endif %}
+                {% if recipe.data.difficulty !== "easy" %}
+                  <div class="bi-mortarboard-fill"></div>
+                {% endif %}
+                {% if recipe.data.difficulty === "hard" %}
+                  <div class="bi-mortarboard-fill"></div>
+                {% endif %}
+                {% if recipe.data.difficulty !== "hard" %}
+                  <div class="bi-mortarboard"></div>
+                {% endif %}
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              {{ recipe.data.difficulty | capitalize }}
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="{{ recipe.url }}">See Recipe</a >
+            </div>
           </div>
         </div>
       </div>
-    </div>
     {% endfor %}
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const recipes = document.querySelectorAll(".recipe");
       const tagButtons = document.querySelectorAll(".filter-button");
-      const restrictionButtons = document.querySelectorAll(
-        ".restriction-button"
-      );
+      const restrictionButtons = document.querySelectorAll(".restriction-button");
       const difficultyButtons = document.querySelectorAll(".difficulty-button");
       function filterRecipes() {
-        const selectedTags = Array.from(tagButtons)
+        const selectedTags = Array
+          .from(tagButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.tag);
-        const selectedRestrictions = Array.from(restrictionButtons)
+        const selectedRestrictions = Array
+          .from(restrictionButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.restriction);
-        const selectedDifficulties = Array.from(difficultyButtons)
+        const selectedDifficulties = Array
+          .from(difficultyButtons)
           .filter((btn) => btn.classList.contains("active"))
           .map((btn) => btn.dataset.difficulty);
         recipes.forEach((recipe) => {
           const recipeDifficulty = recipe.dataset.difficulty;
-          const recipeRestrictions = (recipe.dataset.restrictions ?? "").split(
-            " "
-          );
+          const recipeRestrictions = (recipe.dataset.restrictions ?? "").split(" ");
           const recipeTags = (recipe.dataset.tags ?? "").split(" ");
-          if (
-            selectedTags.every((tag) => recipeTags.includes(tag))
-            && selectedRestrictions.every((restriction) =>
-                recipeRestrictions.includes(restriction)
-              ) 
-            && (
-              !selectedDifficulties.length ||
-            selectedDifficulties.includes(recipeDifficulty))
-          ) {
-            recipe.classList.remove("d-none");
+          if (selectedTags.every((tag) => recipeTags.includes(tag)) && selectedRestrictions.every((restriction) => recipeRestrictions.includes(restriction)) && (!selectedDifficulties.length || selectedDifficulties.includes(recipeDifficulty))) {
+            recipe
+              .classList
+              .remove("d-none");
           } else {
-            recipe.classList.add("d-none");
+            recipe
+              .classList
+              .add("d-none");
           }
         });
       }
@@ -159,7 +123,9 @@
       difficultyButtons.forEach((button) => {
         button.addEventListener("click", () => {
           // Toggle the active class on the button
-          button.classList.toggle("active");
+          button
+            .classList
+            .toggle("active");
           filterRecipes();
         });
       });
@@ -168,7 +134,9 @@
           const tag = button.dataset.tag;
 
           // Toggle the active class on the button
-          button.classList.toggle("active");
+          button
+            .classList
+            .toggle("active");
 
           filterRecipes();
         });
@@ -178,7 +146,9 @@
           const restriction = button.dataset.restriction;
 
           // Toggle the active class on the button
-          button.classList.toggle("active");
+          button
+            .classList
+            .toggle("active");
           filterRecipes();
         });
       });
