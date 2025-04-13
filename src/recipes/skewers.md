@@ -1,7 +1,7 @@
 ---
 title: Skewers
 meal: lunch
-image: https://www.pexels.com/photo/rustic-charcuterie-board-with-cheese-and-meats-29189498/
+image: skewer.jpg
 description: Fun and customizable skewers with meat, cheese, fruit, and veggies.
 badge: Healthy
 difficulty: easy
