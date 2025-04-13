@@ -5,7 +5,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build:css": "sass src/scss/styles.scss:src/css/styles.css --style=compressed",
-    "build": "npm run build:css && eleventy"
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
