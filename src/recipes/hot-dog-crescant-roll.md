@@ -1,7 +1,7 @@
 ---
 title: Hot Dogs in Crescent Rolls
 meal: dinner
-image: hot-dogs.jpg
+image: hot-dogs.png
 description: Hot dogs wrapped in crescent rolls and baked until golden brown.
 badge: Delicious
 difficulty: intermediate

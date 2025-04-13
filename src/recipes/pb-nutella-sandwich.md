@@ -1,7 +1,7 @@
 ---
 title: Peanut Butter and Nutella Sandwich
 meal: lunch
-image: pb-nutella-sandwich.jpg
+image: pb-nutella-sandwich.png
 description: A sweet and nutty sandwich that’s perfect for a quick lunch.
 badge: Delicious
 difficulty: easy
