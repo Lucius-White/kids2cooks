@@ -91,9 +91,6 @@ export default function (eleventyConfig) {
       grouped[meal].restrictions = grouped[meal].restrictions.concat(
         recipe.data.restrictions || []
       );
-      console.log(recipe.data.title);
-      console.log(recipe.data.meal);
-      console.log(recipe.data.tags);
     });
     return Object.entries(grouped).map(
       ([meal, { recipes, tags, restrictions }]) => ({
