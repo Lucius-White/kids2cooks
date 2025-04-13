@@ -2,22 +2,21 @@
 title: Scrambled Eggs
 meal: breakfast
 image: scrambled-eggs.jpg
-description: Quick and fluffy scrambled eggs that are perfect for starting the day.
-badge: Quick
-restrictions:
-  - vegetarian
+description: Fluffy scrambled eggs cooked to perfection with butter.
+badge: Healthy
+difficulty: intermediate
 tags:
   - protein
-difficulty: easy
+  - quick
+  - healthy
 ingredients:
-  - 3 large eggs
-  - 1/4 cup milk
-  - 1 tablespoon butter
-  - Pinch of salt
-  - Pinch of pepper
+  - 6 eggs
+  - 1 Tbsp butter
 instructions:
-  - Crack the eggs into a bowl, add milk, salt, and pepper, then whisk until smooth.
-  - Heat butter in a non-stick pan over medium heat.
-  - Pour the egg mixture into the pan and gently stir with a spatula until the eggs are cooked but still soft.
-  - Serve immediately with toast or fruit.
+  - Heat a pan at medium.
+  - Add 1 Tbsp butter to the pan.
+  - Crack six eggs into a bowl.
+  - Whisk eggs.
+  - Pour all of the eggs into the pan.
+  - Stir until fully cooked.
 ---

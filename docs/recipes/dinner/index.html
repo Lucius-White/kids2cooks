@@ -97,6 +97,10 @@
     <strong>Features:</strong>
     <div class="btn-group" role="group" aria-label="Tag Filters">
       
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="cheesy">
+          Cheesy
+        </button>
+      
         <button type="button" class="btn btn-outline-primary filter-button" data-tag="healthy">
           Healthy
         </button>
@@ -105,16 +109,12 @@
           Quick
         </button>
       
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="cheesy">
-          Cheesy
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="delicious">
+          Delicious
         </button>
       
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="beginner">
-          Beginner
-        </button>
-      
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="hearty">
-          Hearty
+        <button type="button" class="btn btn-outline-primary filter-button" data-tag="italian">
+          Italian
         </button>
       
         <button type="button" class="btn btn-outline-primary filter-button" data-tag="customizable">
@@ -138,6 +138,45 @@
     </div>
   </div>
   <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+    
+      <div class="col mb-5 recipe" data-tags="cheesy" data-restrictions="vegetarian" data-difficulty="intermediate">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            Comfort Food
+          </div>
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/broccoli-casserole.jpg" alt="Cheesy Broccoli Casserole"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">Cheesy Broccoli Casserole</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
+                
+                
+                  <div class="bi-mortarboard-fill"></div>
+                
+                
+                
+                  <div class="bi-mortarboard"></div>
+                
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              Intermediate
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/dinner/broccoli-casserole/">See Recipe</a >
+            </div>
+          </div>
+        </div>
+      </div>
     
       <div class="col mb-5 recipe" data-tags="healthy quick" data-restrictions="" data-difficulty="easy">
         <div class="card h-100 position-relative">
@@ -178,19 +217,19 @@
         </div>
       </div>
     
-      <div class="col mb-5 recipe" data-tags="cheesy beginner" data-restrictions="vegetarian" data-difficulty="intermediate">
+      <div class="col mb-5 recipe" data-tags="delicious" data-restrictions="" data-difficulty="intermediate">
         <div class="card h-100 position-relative">
           <!-- Badge-->
           <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-            Comfort Food
+            Delicious
           </div>
           <!-- Image-->
-          <img class="card-img-top" src="/assets/images/broccoli-casserole.jpg" alt="Cheesy Broccoli Casserole"/>
+          <img class="card-img-top" src="/assets/images/hot-dogs.jpg" alt="Hot Dogs in Crescent Rolls"/>
           <!-- Details-->
           <div class="card-body p-4">
             <div class="text-center">
               <!-- Title-->
-              <h5 class="fw-bolder">Cheesy Broccoli Casserole</h5>
+              <h5 class="fw-bolder">Hot Dogs in Crescent Rolls</h5>
               <!-- Difficulty-->
               <div class="d-flex justify-content-center small mb-2">
                 <div class="bi-mortarboard-fill"></div>
@@ -211,25 +250,25 @@
           <!-- Product actions-->
           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
             <div class="text-center">
-              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/dinner/broccoli-casserole/">See Recipe</a >
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/dinner/hot-dog-crescant-roll/">See Recipe</a >
             </div>
           </div>
         </div>
       </div>
     
-      <div class="col mb-5 recipe" data-tags="hearty beginner" data-restrictions="" data-difficulty="hard">
+      <div class="col mb-5 recipe" data-tags="italian healthy" data-restrictions="" data-difficulty="difficult">
         <div class="card h-100 position-relative">
           <!-- Badge-->
           <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-            Italian
+            Healthy
           </div>
           <!-- Image-->
-          <img class="card-img-top" src="/assets/images/spaghetti-bolognese.jpg" alt="Spaghetti Bolognese"/>
+          <img class="card-img-top" src="/assets/images/spaghetti.jpg" alt="Spaghetti"/>
           <!-- Details-->
           <div class="card-body p-4">
             <div class="text-center">
               <!-- Title-->
-              <h5 class="fw-bolder">Spaghetti Bolognese</h5>
+              <h5 class="fw-bolder">Spaghetti</h5>
               <!-- Difficulty-->
               <div class="d-flex justify-content-center small mb-2">
                 <div class="bi-mortarboard-fill"></div>
@@ -238,19 +277,19 @@
                   <div class="bi-mortarboard-fill"></div>
                 
                 
-                  <div class="bi-mortarboard-fill"></div>
                 
+                  <div class="bi-mortarboard"></div>
                 
               </div>
               <!-- Difficulty-->
               Difficulty:
-              Hard
+              Difficult
             </div>
           </div>
           <!-- Product actions-->
           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
             <div class="text-center">
-              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/dinner/spaghetti-bolognese/">See Recipe</a >
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/dinner/spaghetti/">See Recipe</a >
             </div>
           </div>
         </div>
