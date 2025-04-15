@@ -20,5 +20,5 @@ instructions:
   - Boil for 7 minutes, stirring occasionally.
   - Carefully drain the water out of the pot.
   - Add the jar of marinara sauce to the pot.
-  - Optional: Serve with grated parmesan.
+  - Optional - Serve with grated parmesan.
 ---
