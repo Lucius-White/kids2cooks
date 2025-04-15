@@ -4,7 +4,7 @@ meal: dinner
 image: spaghetti.jpg
 description: A hearty plate of spaghetti with classic marinara sauce.
 badge: Healthy
-difficulty: difficult
+difficulty: hard
 restrictions:
   - vegetarian
   - vegan
