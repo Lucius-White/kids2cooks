@@ -8,6 +8,7 @@ difficulty: easy
 tags:
   - picnic
   - protein
+  - delicious
 ingredients:
   - Wooden or metal skewers
   - Your choice of bite-sized meats, cheeses, vegetables, and fruits (e.g., cheddar cheese cubes, cherry tomatoes, deli-sliced turkey, seedless red grapes)
