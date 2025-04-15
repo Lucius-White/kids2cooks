@@ -4,7 +4,7 @@ meal: breakfast
 image: scrambled-eggs.jpg
 description: Fluffy scrambled eggs cooked to perfection with butter.
 badge: Healthy
-difficulty: intermediate
+difficulty: easy
 restrictions: 
   - vegetarian
 tags:
