@@ -10,8 +10,8 @@ tags:
   - italian
   - delicious
 ingredients:
-  - 16 ounce beef fillet.
-  - Ball chilli.
+  - 16 ounce beef fillet
+  - Ball chilli
   - Olive Oil
 instructions:
   - Cut off excess fat on the beef but not too much.
