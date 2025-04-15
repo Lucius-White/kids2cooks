@@ -21,6 +21,6 @@ instructions:
   - Add 1 Tbsp butter to the pan.
   - Crack the eggs into a large bowl.
   - Whisk mix, milk, and eggs until smooth.
-  - Pour small amounts of the batter on the pan. Make sure the pancakes don’t touch each other.
+  - Pour small amounts of the batter on the pan. Make sure the pancakes don't touch each other.
   - Flip the pancakes when there are bubbles on top.
 ---
