@@ -5,6 +5,8 @@ image: pb-nutella-sandwich.png
 description: A sweet and nutty sandwich that’s perfect for a quick lunch.
 badge: Delicious
 difficulty: easy
+restrictions: 
+  - vegetarian
 tags:
   - delicious
   - quick

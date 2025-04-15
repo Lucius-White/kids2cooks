@@ -5,6 +5,8 @@ image: pancakes.jpg
 description: Fluffy pancakes made with Bisquick and cooked to golden perfection.
 badge: Delicious
 difficulty: difficult
+restrictions:
+  - vegetarian
 tags:
   - delicious
   - kid-favorite

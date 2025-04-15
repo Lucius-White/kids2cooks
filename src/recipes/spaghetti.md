@@ -5,6 +5,9 @@ image: spaghetti.jpg
 description: A hearty plate of spaghetti with classic marinara sauce.
 badge: Healthy
 difficulty: difficult
+restrictions:
+  - vegetarian
+  - vegan
 tags:
   - italian
   - healthy

@@ -5,6 +5,8 @@ image: scrambled-eggs.jpg
 description: Fluffy scrambled eggs cooked to perfection with butter.
 badge: Healthy
 difficulty: intermediate
+restrictions: 
+  - vegetarian
 tags:
   - protein
   - quick
