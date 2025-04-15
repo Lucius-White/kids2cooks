@@ -1,17 +1,17 @@
 ---
-title: Steak
-meal: dinner
-image: steak.png
-description: A juicy, medium-rare beef.
-badge: protein
-difficulty: hard
+title: French Toast
+meal: breakfast
+image: french-toast.jpg
+description: A nice, tasty, quick snack for you to make.
+badge: quick
+difficulty: intermediate
 restrictions:
 tags:
-  - italian
-  - delicious
+  - picnic
+  - healthy
 ingredients:
-  - 16 ounce beef fillet
-  - Ball chilli
+  - Whole wheat bread
+  - Butter
   - Olive Oil
 instructions:
   - Cut off excess fat on the beef but not too much.
