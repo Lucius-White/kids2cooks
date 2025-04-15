@@ -2,11 +2,11 @@
 title: Pizza
 meal: lunch
 image: pizza.png
-description: A yummy cheese pizza.
+description: A delicious cheese pizza.  Warning! Very hot oven used, be careful and use an oven mitt.
 badge: protein
-difficulty: intermediate
+difficulty: hard
 restrictions:
-- vegetarian
+  - vegetarian
 tags:
   - italian
   - delicious
@@ -19,6 +19,6 @@ instructions:
   - First, form a circle shape with the pizza dough.
   - Next, smear the tomato sauce over the dough with a spoon.
   - Sprinkle mozzarella cheese on top of the pizza.
-  - Heat the oven up to 450°F and place the pizza inside for 12-15 minutes.
+  - Heat the oven up to 450°F and place the pizza inside for 12-15 minutes using an oven mit.
   - Finally, take the pizza out, put it on your plate, and enjoy!
 ---

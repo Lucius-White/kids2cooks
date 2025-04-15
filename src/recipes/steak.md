@@ -5,7 +5,6 @@ image: steak.png
 description: A juicy, medium-rare beef.
 badge: protein
 difficulty: hard
-restrictions:
 tags:
   - italian
   - delicious

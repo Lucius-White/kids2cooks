@@ -5,7 +5,6 @@ image: french-toast.jpg
 description: A nice, tasty, quick snack for you to make.
 badge: quick
 difficulty: intermediate
-restrictions:
 tags:
   - picnic
   - healthy

@@ -5,7 +5,6 @@ image: spaghetti.jpg
 description: A nice, crispy bacon ready for you to devour.
 badge: protein
 difficulty: intermediate
-restrictions:
 tags:
   - quick
   - delicious

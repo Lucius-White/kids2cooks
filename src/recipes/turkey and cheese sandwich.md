@@ -5,7 +5,6 @@ image: spaghetti.jpg
 description: A cheesy sandwich filled with turkey.
 badge: protein
 difficulty: easy
-restrictions:
 tags:
   - picnic
   - delicious
