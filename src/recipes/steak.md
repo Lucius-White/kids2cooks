@@ -14,7 +14,7 @@ ingredients:
   - Ball chilli
   - Olive Oil
 instructions:
-  - Cut off excess fat on the beef but not too much.
+  - Cut off excess fat on the beef but not too much. (Optional, you don't need to if you dont want to)
   - Set the stove top temperature to the 8th degree and place the pan on top of it.
   - After two minutes, add a quarter cup of olive oil.
   - Then, after three minutes, place your steak on the pan.
