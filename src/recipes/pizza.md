@@ -1,7 +1,7 @@
 ---
 title: Pizza
 meal: lunch
-image: spaghetti.jpg
+image: pizza.png
 description: A yummy cheese pizza.
 badge: protein
 difficulty: intermediate
