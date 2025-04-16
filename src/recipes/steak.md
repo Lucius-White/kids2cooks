@@ -20,5 +20,5 @@ instructions:
   - Every 2 minutes, flip the steak for the next 5-6 minutes.
   - Once it's cooked to your liking, take off the steak and place it onto a plate.
   - Lastly, add a the ball chilli to the steak.
-  - Optional: You can add A 1 Steak Sauce to the side.
+  - Optional - You can add A 1 Steak Sauce to the side.
 ---

@@ -21,9 +21,9 @@
   </div>
   <div class="my-3">
     <strong>Features:</strong>
-    <div class="btn-group" role="group" aria-label="Tag Filters">
+    <div class="btn-group flex-wrap" role="group" aria-label="Tag Filters">
       {% for tag in tags %}
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="{{ tag }}">
+        <button type="button mb-2" class="btn btn-outline-primary filter-button" data-tag="{{ tag }}">
           {{ tag | capitalize}}
         </button>
       {% endfor %}

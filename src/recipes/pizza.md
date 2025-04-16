@@ -16,9 +16,9 @@ ingredients:
   - Tomato sauce
   - Mozzarella cheese
 instructions:
-  - First, form a circle shape with the pizza dough.
-  - Next, smear the tomato sauce over the dough with a spoon.
+  - Form a circle shape with the pizza dough.
+  - Smear the tomato sauce over the dough with a spoon.
   - Sprinkle mozzarella cheese on top of the pizza.
-  - Heat the oven up to 450°F and place the pizza inside for 12-15 minutes using an oven mit.
-  - Finally, take the pizza out, put it on your plate, and enjoy!
+  - Heat the oven up to 450°F and place the pizza inside for 12-15 minutes using an oven mitt.  (Don't forget the oven mitt!)
+  - Take the pizza out, put it on your plate, and enjoy!
 ---
