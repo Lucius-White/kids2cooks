@@ -5,7 +5,8 @@ image: french-toast.jpg
 description: A nice and tasty breakfast 
 badge: Delicious
 difficulty: hard
-restrictions: vegetarian
+restrictions: 
+  - vegetarian
 tags:
   - brunch
   - delicious
@@ -18,8 +19,6 @@ ingredients:
   - 1 teaspoon ground cinnamon
   - 1 teaspoon vanilla extract
   - 8 thick slices bread
-
-
 instructions:
   - Heat a pan on medium.
   - Add 1 Tbsp butter to the pan.

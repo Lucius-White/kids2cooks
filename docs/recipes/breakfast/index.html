@@ -95,34 +95,30 @@
   </div>
   <div class="my-3">
     <strong>Features:</strong>
-    <div class="btn-group" role="group" aria-label="Tag Filters">
+    <div class="btn-group flex-wrap" role="group" aria-label="Tag Filters">
       
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="quick">
+        <button type="button mb-2" class="btn btn-outline-primary filter-button" data-tag="quick">
           Quick
         </button>
       
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="delicious">
+        <button type="button mb-2" class="btn btn-outline-primary filter-button" data-tag="delicious">
           Delicious
         </button>
       
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="picnic">
-          Picnic
-        </button>
-      
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="healthy">
-          Healthy
-        </button>
-      
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="kid-favorite">
-          Kid-favorite
-        </button>
-      
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="brunch">
+        <button type="button mb-2" class="btn btn-outline-primary filter-button" data-tag="brunch">
           Brunch
         </button>
       
-        <button type="button" class="btn btn-outline-primary filter-button" data-tag="protein">
+        <button type="button mb-2" class="btn btn-outline-primary filter-button" data-tag="protein">
           Protein
+        </button>
+      
+        <button type="button mb-2" class="btn btn-outline-primary filter-button" data-tag="healthy">
+          Healthy
+        </button>
+      
+        <button type="button mb-2" class="btn btn-outline-primary filter-button" data-tag="kid-favorite">
+          Kid-favorite
         </button>
       
     </div>
@@ -146,7 +142,7 @@
             protein
           </div>
           <!-- Image-->
-          <img class="card-img-top" src="/assets/images/spaghetti.jpg" alt="Bacon"/>
+          <img class="card-img-top" src="/assets/images/bacon.jpg" alt="Bacon"/>
           <!-- Details-->
           <div class="card-body p-4">
             <div class="text-center">
@@ -178,11 +174,11 @@
         </div>
       </div>
     
-      <div class="col mb-5 recipe" data-tags="picnic healthy" data-restrictions="" data-difficulty="intermediate">
+      <div class="col mb-5 recipe" data-tags="brunch delicious" data-restrictions="vegetarian" data-difficulty="hard">
         <div class="card h-100 position-relative">
           <!-- Badge-->
           <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-            quick
+            Delicious
           </div>
           <!-- Image-->
           <img class="card-img-top" src="/assets/images/french-toast.jpg" alt="French Toast"/>
@@ -191,45 +187,6 @@
             <div class="text-center">
               <!-- Title-->
               <h5 class="fw-bolder">French Toast</h5>
-              <!-- Difficulty-->
-              <div class="d-flex justify-content-center small mb-2">
-                <div class="bi-mortarboard-fill"></div>
-                
-                
-                  <div class="bi-mortarboard-fill"></div>
-                
-                
-                
-                  <div class="bi-mortarboard"></div>
-                
-              </div>
-              <!-- Difficulty-->
-              Difficulty:
-              Intermediate
-            </div>
-          </div>
-          <!-- Product actions-->
-          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center">
-              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/french toast/">See Recipe</a >
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="col mb-5 recipe" data-tags="delicious kid-favorite brunch" data-restrictions="vegetarian" data-difficulty="hard">
-        <div class="card h-100 position-relative">
-          <!-- Badge-->
-          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
-            Delicious
-          </div>
-          <!-- Image-->
-          <img class="card-img-top" src="/assets/images/pancakes.jpg" alt="Pancakes"/>
-          <!-- Details-->
-          <div class="card-body p-4">
-            <div class="text-center">
-              <!-- Title-->
-              <h5 class="fw-bolder">Pancakes</h5>
               <!-- Difficulty-->
               <div class="d-flex justify-content-center small mb-2">
                 <div class="bi-mortarboard-fill"></div>
@@ -250,7 +207,7 @@
           <!-- Product actions-->
           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
             <div class="text-center">
-              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/pancakes/">See Recipe</a >
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/french-toast/">See Recipe</a >
             </div>
           </div>
         </div>
@@ -290,6 +247,45 @@
           <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
             <div class="text-center">
               <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/scrambled-eggs/">See Recipe</a >
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col mb-5 recipe" data-tags="delicious kid-favorite brunch" data-restrictions="vegetarian" data-difficulty="hard">
+        <div class="card h-100 position-relative">
+          <!-- Badge-->
+          <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
+            Delicious
+          </div>
+          <!-- Image-->
+          <img class="card-img-top" src="/assets/images/pancakes.jpg" alt="Pancakes"/>
+          <!-- Details-->
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Title-->
+              <h5 class="fw-bolder">Pancakes</h5>
+              <!-- Difficulty-->
+              <div class="d-flex justify-content-center small mb-2">
+                <div class="bi-mortarboard-fill"></div>
+                
+                
+                  <div class="bi-mortarboard-fill"></div>
+                
+                
+                  <div class="bi-mortarboard-fill"></div>
+                
+                
+              </div>
+              <!-- Difficulty-->
+              Difficulty:
+              Hard
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center">
+              <a class="stretched-link btn btn-outline-dark mt-auto" href="/recipes/breakfast/pancakes/">See Recipe</a >
             </div>
           </div>
         </div>
