@@ -3,7 +3,7 @@ title: Turkey and Cheese Sandwich
 meal: lunch
 image: turkey-cheese-sandwich.jpg
 description: A cheesy sandwich filled with turkey.
-badge: protein
+badge: High in Protein
 difficulty: easy
 tags:
   - picnic

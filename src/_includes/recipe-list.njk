@@ -8,11 +8,11 @@
   </div>
 </header>
 <section class="container pt-5">
-  <p>Use the filters below to narrow down the list of recipes</p>
+  <p>Use the filters below to narrow down the list of recipes.</p>
   <div class="my-3">
     <strong>Difficulty:</strong>
     <div class="btn-group" role="group" aria-label="Dietary Restriction Filters">
-      {% for difficulty in["easy", "intermediate", "hard"] %}
+      {% for difficulty in["easy", "intermediate", "difficult"] %}
         <button type="button" class="btn btn-outline-primary difficulty-button" data-difficulty="{{ difficulty }}">
           {{ difficulty | capitalize }}
         </button>

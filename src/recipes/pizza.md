@@ -3,8 +3,8 @@ title: Pizza
 meal: lunch
 image: pizza.jpg
 description: A delicious cheese pizza.  Warning! Very hot oven used, be careful and use an oven mitt.
-badge: protein
-difficulty: hard
+badge: Delicious
+difficulty: difficult
 restrictions:
   - vegetarian
 tags:

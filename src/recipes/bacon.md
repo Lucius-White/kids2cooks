@@ -3,7 +3,7 @@ title: Bacon
 meal: breakfast
 image: bacon.jpg
 description: A nice, crispy bacon ready for you to devour.
-badge: protein
+badge: High in Protein
 difficulty: intermediate
 tags:
   - quick

@@ -4,7 +4,7 @@ meal: breakfast
 image: french-toast.jpg
 description: A nice and tasty breakfast 
 badge: Delicious
-difficulty: hard
+difficulty: difficult
 restrictions: 
   - vegetarian
 tags:
