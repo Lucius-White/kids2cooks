@@ -1,7 +1,7 @@
 ---
 title: Steak
 meal: dinner
-image: steak.png
+image: steak.jpg
 description: A juicy, medium-rare beef.
 badge: protein
 difficulty: hard
